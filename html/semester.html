@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Management</title>
+    <link rel="stylesheet" href="/css/semester.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Semester Management</h1>
+        <form id="semesterForm">
+            <input type="hidden" id="semesterId">
+            <div class="form-group">
+                <label for="semestercode">Semester Code</label>
+                <input type="text" id="semestercode" name="semestercode" placeholder="Enter Semester Code" required>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester Name</label>
+                <input type="text" id="semester" name="semester" placeholder="Enter Semester Name" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="add" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+        <table id="semesterTable">
+            <thead>
+                <tr>
+                    <th>Semester ID</th>
+                    <th>Semester Code</th>
+                    <th>Semester Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/js/semester.js"></script>
+</body>
+</html>

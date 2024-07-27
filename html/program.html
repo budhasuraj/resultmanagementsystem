@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Management</title>
+    <link rel="stylesheet" href="/css/program.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/program.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Program Management</h1>
+        <form id="programForm">
+            <input type="hidden" id="programId">
+            <label for="facultyId">Faculty:</label>
+            <select id="facultyId" required>
+                <option value="">Select Faculty</option>
+            </select>
+            <p id="facultyNameDisplay"></p>
+            <label for="programCode">Program Code:</label>
+            <input type="text" id="programCode" required>
+            <label for="programName">Program Name:</label>
+            <input type="text" id="programName" required>
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+        <table id="programTable">
+            <thead>
+                <tr>
+                    <th>Program ID</th>
+                    <th>Faculty ID</th>
+                    <th>Program Code</th>
+                    <th>Program Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Program rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

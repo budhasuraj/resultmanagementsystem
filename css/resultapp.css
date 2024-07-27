@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.top-image {
+    width: 80px;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: rgb(11, 96, 130);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjust according to header height */
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(11, 96, 130);
+}
+
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(11, 96, 130);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(9, 76, 103);
+}
+
+button.forgot {
+    background-color: #ff9900;
+}
+
+button.forgot:hover {
+    background-color: #e68a00;
+}
+
+button.exit {
+    background-color: #ff4d4d;
+}
+
+button.exit:hover {
+    background-color: #e60000;
+}
+
+#message {
+    color: red;
+    margin-top: 10px;
+}

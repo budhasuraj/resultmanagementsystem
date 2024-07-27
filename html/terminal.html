@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Management</title>
+    <link rel="stylesheet" href="/css/terminal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Terminal Management</h1>
+        <form id="terminalForm">
+            <input type="hidden" id="termId">
+            <label for="terminalName">Terminal Name:</label>
+            <input type="text" id="terminalName" required>
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+        <hr>
+        <h2>Terminal List</h2>
+        <table id="terminalTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Terminal Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Terminal rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/terminal.js"></script>
+</body>
+</html>

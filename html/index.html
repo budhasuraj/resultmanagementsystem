@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-image {
+            width: 80px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-left: 30px;
+        }
+        .navigation a {
+            text-decoration: none;
+            margin: 0 5px;
+            color: rgb(5, 5, 175);
+            display: none; /* Hide all links by default */
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: rgb(11, 96, 130);
+        }
+        .navigation {
+            text-align: center;
+            margin: 20px;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .contact {
+            display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        text-align: justify;
+        justify-items: center;
+        padding: -100px;
+        column-gap: 10px;
+        justify-content: center;
+        margin-left: -550px;
+        }
+        h4 {
+            margin: 0 10px;
+            color: rgba(0, 0, 0, 0.736);
+        }
+        .about {
+            text-align: center;
+            color: rgb(10, 10, 211);
+            margin: 20px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 20px;
+        }
+        .school-image {
+            width: 900px;
+            margin: 20px auto;
+            display: block;
+            background: cyan;
+        }
+        .logout-button {
+            background-color: #f44336; /* Red color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .page-intro {
+            text-align: center;
+            margin: 20px;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+        .timeline-item {
+            margin: 10px 0;
+        }
+        .year {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img class="top-image" src="images/logo.png" alt="Logo">
+        <h1>National Academy of Science and Technology</h1>
+        <nav class="navigation">
+            <a id="studentLink" href="student.html">Students</a>
+            <a id="teacherLink" href="teacher.html">Teacher</a>
+            <a id="facultyLink" href="faculty.html">Faculty</a>
+            <a id="programLink" href="program.html">Program</a>
+            <a id="semesterLink" href="semester.html">Semester</a>
+            <a id="subjectLink" href="subject.html">Subject</a>
+            <a id="terminalLink" href="terminal.html">Terminal</a>
+            <a id="marksLink" href="marks.html">Add Marks</a>
+            <a id="marksheetLink" href="marksheet.html">Results</a>
+        </nav>
+        <button class="logout-button" id="logoutButton">Logout</button>
+    </div>
+
+    <div class="contact">
+        <h4>Uttar Behadi-Dhangadhi, Kailali</h4>
+        <h4>Contact: +977 91523312</h4>
+    </div>
+
+    <div class="school">
+        <img class="school-image" src="images/college.png" alt="College">
+    </div>
+
+    <div class="page-intro">
+        <h1>QAA Certified and 24 Years of Experience</h1>
+        <p>National Academy of Science and Technology, popularly known as NAST, is a QAA Certified, English medium co-educational institution. Patroned and promoted by a team of academicians, researchers, and professionals renowned both at home and abroad, NAST has proved itself as a center of learning for academic excellence in the field of science, technology, and management. We feel pleasure to state that we have been pioneering engineering education in the Country’s Western region.</p>
+
+        <h2>Academic Milestones</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <span class="year">2000 A.D.:</span> Bachelor of Computer Engineering under affiliation of Pokhara University.
+            </li>
+            <li class="timeline-item">
+                <span class="year">2001 A.D.:</span> Bachelor of Computer Application (BCA)
+            </li>
+            <li class="timeline-item">
+                <span class="year">2008 A.D.:</span> Bachelor of Business Administration (BBA)
+            </li>
+            <li class="timeline-item">
+                <span class="year">2010 A.D.:</span> Bachelor of Civil Engineering (BE Civil)
+            </li>
+            <li class="timeline-item">
+                <span class="year">2022 A.D.:</span> QAA Certified from UGC Nepal
+            </li>
+            <li class="timeline-item">
+                <span class="year">2024 A.D.:</span> Master of Business Administration (MBA)
+            </li>
+        </ul>
+    </div>
+
+    <div class="about">
+        <a href="about.html">About Us?</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

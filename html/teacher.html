@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Management</title>
+    <link rel="stylesheet" href="/css/teacher.css">
+</head>
+<body>
+    <h1>Teacher Management</h1>
+    <form id="teacherForm">
+        <input type="hidden" id="teacherId">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" required>
+
+        <label for="teachercode">Teacher Code:</label>
+        <input type="text" id="teachercode" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <div class="button-group">
+            <button type="submit" id="saveButton" class="add">Add</button>
+            <button type="submit" id="exitButton" class="exit">Exit</button>
+            <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+            <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+        </div>
+    </form>
+
+    <table id="teacherTable">
+        <thead>
+            <tr>
+                <th>Teacher ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Teacher Code</th>
+                <th>Address</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/teacher.js"></script>
+</body>
+</html>

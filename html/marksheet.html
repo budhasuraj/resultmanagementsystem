@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Management</title>
+    <link rel="stylesheet" href="/css/marksheet.css">
+</head>
+<body>
+    <h1>Marksheet Management</h1>
+    <form id="marksheet-form">
+        <div>
+            <label for="facultyId">Faculty:</label>
+            <select id="facultyId" name="facultyId" required>
+                <option value="">Select Faculty</option>
+            </select>
+        </div>
+        <div>
+            <label for="programId">Program:</label>
+            <select id="programId" name="programId" disabled>
+                <option value="">Select Program</option>
+            </select>
+        </div>
+        <div>
+            <label for="semesterId">Semester:</label>
+            <select id="semesterId" name="semesterId" disabled>
+                <option value="">Select Semester</option>
+            </select>
+        </div>
+        <div>
+            <label for="studentId">Student:</label>
+            <select id="studentId" name="studentId" disabled>
+                <option value="">Select Student</option>
+            </select>
+        </div>
+        <div>
+            <label for="courseId">Course:</label>
+            <select id="courseId" name="courseId" required>
+                <option value="">Select Course</option>
+            </select>
+        </div>
+        <div>
+            <label for="subjectId">Subject:</label>
+            <select id="subjectId" name="subjectId" required>
+                <option value="">Select Subject</option>
+            </select>
+        </div>
+        <div>
+            <label for="marksId">Marks:</label>
+            <select id="marksId" name="marksId" required>
+                <option value="">Select Marks</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button type="submit" id="saveButton" class="add">Add</button>
+            <button type="submit" id="nextButton" class="next">Next Result</button>
+            <button type="submit" id="exitButton" class="exit">Exit</button>
+            <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+            <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+        </div>
+    </form>
+    <div> <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName"></div>
+
+    <table id="marksheet-table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <form action="last">
+        <div>
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total">
+        </div>
+        <div>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result">
+        </div>
+    
+        <div><button type="submit" id="printButton" class="next">Print Result</button></div>
+        <div>
+            <h4>P=Passed</h4>
+            <h4>F=Failed</h4>
+            <h4>AB=Absent</h4>
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/marksheet.js"></script>
+</body>
+</html>

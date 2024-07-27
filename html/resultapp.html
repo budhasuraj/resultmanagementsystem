@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/resultapp.css">
+</head>
+<body>
+    <div class="header-container">
+        <img class="top-image" src="images/logo.png" alt="Logo">
+        <h1>National Academy of Science and Technology</h1>
+    </div>
+
+    <div class="login-container">
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Email:</label>
+                <input type="email" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <button type="button" id="forgotButton" class="forgot">Forgot Password</button>
+            <button type="button" id="signupButton" class="signup">Student Signup</button>
+            <button type="button" id="exitButton" class="exit" >Exit</button>
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/resultapp.js"></script>
+</body>
+</html>

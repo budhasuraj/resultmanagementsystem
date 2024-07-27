@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="/css/student.css">
+</head>
+<body>
+    <h1>Student Management</h1>
+    <form id="studentForm">
+        <input type="hidden" id="studentId">
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="contact">Contact:</label>
+        <input type="tel" id="contact" required>
+
+        <label for="identityCard">Identity Card Number:</label>
+        <input type="text" id="identityCard" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="facultyId">Faculty:</label>
+        <select id="facultyId" required>
+            <option value="">Select Faculty</option>
+        </select>
+        <span id="facultyNameDisplay"></span>
+
+        <label for="programId">Program:</label>
+        <select id="programId" required>
+            <option value="">Select Program</option>
+        </select>
+        <span id="programNameDisplay"></span>
+
+        <div class="button-group">
+            <button type="submit" id="saveButton" class="add">Add</button>
+            <button type="submit" id="exitButton" class="exit">Exit</button>
+            <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+            <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+        </div>
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Identity Card</th>
+                <th>Address</th>
+                <th>Faculty</th>
+                <th>Program</th>
+                <th>Gender</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/student.js"></script>
+</body>
+</html>

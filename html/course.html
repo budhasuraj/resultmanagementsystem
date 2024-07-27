@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="/css/course.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Management</h1>
+        <form id="course-form">
+            <div class="form-group">
+                <label for="subjectId">Subject</label>
+                <select id="subjectId" name="subjectId" required>
+                    <!-- Options will be dynamically inserted here -->
+                </select>
+                <span id="SubjectCodeDisplay"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="fullMarks">Full Marks</label>
+                <input type="number" id="fullMarks" name="fullMarks" required>
+            </div>
+            <div class="form-group">
+                <label for="passMarks">Pass Marks</label>
+                <input type="number" id="passMarks" name="passMarks" required>
+            </div>
+            <div class="form-group">
+                <label for="creditHours">Credit Hours</label>
+                <input type="number" id="creditHours" name="creditHours" required>
+            </div>
+            <div class="form-group">
+                <label for="facultyId">Faculty</label>
+                <select id="facultyId" name="facultyId" required>
+                    <!-- Options will be dynamically inserted here -->
+                </select>
+                <span id="FacultyNameDisplay"></span>
+            </div>
+            <div class="form-group">
+                <label for="programId">Program</label>
+                <select id="programId" name="programId" required>
+                    <!-- Options will be dynamically inserted here -->
+                </select>
+                <span id="ProgrammeNameDisplay"></span>
+            </div>
+            <div class="form-group">
+                <label for="semesterId">Semester</label>
+                <select id="semesterId" name="semesterId" required>
+                    <!-- Options will be dynamically inserted here -->
+                </select>
+                <span id="SemesterDisplay"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="teacherId">Teacher</label>
+                <select id="teacherId" name="teacherId" required>
+                    <!-- Options will be dynamically inserted here -->
+                </select>
+                <span id="TeacherCodeDisplay"></span>
+
+            </div>
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+        <table id="course-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Subject ID</th>
+                    <th>Full Marks</th>
+                    <th>Pass Marks</th>
+                    <th>Credit Hours</th>
+                    <th>Faculty ID</th>
+                    <th>Program ID</th>
+                    <th>Semester ID</th>
+                    <th>Teacher ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Course data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/course.js"></script>
+</body>
+</html>

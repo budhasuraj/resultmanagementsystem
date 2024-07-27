@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Management</title>
+    <link rel="stylesheet" href="/css/faculty.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/faculty.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Faculty Management</h1>
+        <form id="facultyForm">
+            <input type="hidden" id="facultyId">
+            <div class="form-group">
+                <label for="facultyName">Faculty Name</label>
+                <input type="text" id="facultyName" name="facultyName" placeholder="Enter Faculty Name" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+        <table id="facultyTable">
+            <thead>
+                <tr>
+                    <th>Faculty ID</th>
+                    <th>Faculty Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

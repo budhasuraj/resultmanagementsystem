@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Management</title>
+    <link rel="stylesheet" href="/css/marks.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="/js/marks.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Marks Management</h1>
+        <form id="marks-form">
+            <input type="hidden" id="marksId">
+
+            <div class="form-group">
+                <label for="obtainedMarks">Obtained Marks:</label>
+                <input type="number" id="obtainedMarks" required>
+            </div>
+            <div class="form-group">
+                <label for="remarks">Remarks:</label>
+                <input type="text" id="remarks" maxlength="30">
+            </div>
+            <div class="form-group">
+                <label for="studentId">Student:</label>
+                <select id="studentId" required></select>
+                <span id="studentNameDisplay"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label for="subjectId">Subject:</label>
+                <select id="subjectId" required></select>
+                <span id="subjectNameDisplay"></span>
+            </div>
+            <div class="form-group">
+                <label for="courseId">Course:</label>
+                <select id="courseId" required></select>
+                <span id="courseIdDisplay"></span>
+            </div>
+            <div class="form-group">
+                <label for="terminalId">Terminal:</label>
+                <select id="terminalId" required></select>
+                <span id="terminalNameDisplay"></span>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="saveButton" class="add">Add</button>
+                <button type="submit" id="exitButton" class="exit">Exit</button>
+                <button type="submit" id="updateButton" class="update" style="display: none;">Update</button>
+                <button type="button" id="cancelButton" class="cancel" style="display: none;">Cancel</button>
+            </div>
+        </form>
+
+        <table id="marks-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Obtained Marks</th>
+                    <th>Remarks</th>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Course</th>
+                    <th>Terminal</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
